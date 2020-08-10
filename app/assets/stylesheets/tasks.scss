@@ -2,8 +2,101 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+*{
+  box-sizing: border-box;
+}
+html{
+  font-size: 100%
+}
+//ユーザーが設定した文字サイズを正しく反映させる
+body {
+  font-family: "Yu Gothic Medium", "遊ゴジック Medium", YuGothic, "遊ゴシック体", "ヒラキノ角ゴ Pro W3", sans-serif;
+} 
 /*header start*/
 .header{
-  height: 144px;
-  width: 
+  width: 100%;
+  background-color: #B4C1D1;
 }
+
+.wrapper{
+  max-width: 1200px;
+  // 横幅最大1100px
+  margin: 0 auto;
+  //headerの中で中央に配置する指定
+  padding: 0.4%;
+  //スマートフォン向け余白の指定
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo{
+  color: #fff;
+  font-size: 54px;
+  text-decoration: none;
+  line-height: 100px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  padding-top: 50px;
+}
+
+.menu-item{
+  margin-left: 36px;
+}
+
+.menu-item-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+//main start
+
+.main{
+  padding: 50px 0;
+  min-height: calc(100vh - 189px)
+}
+
+//main article start
+.article{
+  width: 74%;
+  background-color: #fff;
+}
+
+.task_box{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.task_card{
+  height: 150px;
+  width: 250px;
+  background-color: #fff;
+  width: calc(33.333% – 10px);
+  margin:0 15px 15px 0;
+  border-radius: 10px;
+  box-shadow: 3px 3px 6px rgba(0,0,0,0.8);
+}
+
+//main aside start
+.aside{
+  width: 22%;
+  border-right: 3px solid #70707054;
+}
+
+//footer start
+
+.footer{
+  height: 45px;
+  width: 100%;
+  background-color: #B4C1D1;
+  align-items: center;
+}
+
+.copylight{
+  color: #fff;
+  text-align: center;
+  line-height: 45px;
+}
+

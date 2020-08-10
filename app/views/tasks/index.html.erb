@@ -3,16 +3,54 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
+    <!-- googleフォントの指定 -->
   </head>
   <title>Todo-App</title>
   <body>
     <header class="header">
-      <h1 class="title">Todo</h1>
+      <div class="wrapper">
+        <%= link_to "Todo","#", class: "logo"%>
+        <ul class="menu">
+          <li class="menu-item"><a href="#" class="menu-item-link">Mami Arai</a>
+          </li>
+          <li class="menu-item"><a href="#" class="menu-item-link">Log out</a></li>
+        </ul>
+      </div>
     </header>
 
-    <main class="main">
+    <main class="main wrapper">
+      <div class="aside">
+        サイドバー
+      </div>
       <div class="article">
-        <p
+        メイン部分
+        <div class= "task_box">
+          <div class="task_card">
+            １
+          </div>
+          <div class="task_card">
+            ２
+          </div>
+          <div class="task_card">
+            ３
+          </div>
+          <div class="task_card">
+            ４
+          </div>
+          <div class="task_card">
+            ５
+          </div>
+          <div class="task_card">
+            ６
+          </div>
+          <div class="task_card">
+            ７
+          </div>
+          <div class="task_card">
+            ８
+          </div>
+        </div>
       </div>
 
     </main>
