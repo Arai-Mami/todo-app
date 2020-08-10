@@ -8,6 +8,9 @@ class TasksController < ApplicationController
   def create
   end
 
+  def show
+  end
+
     private
     def task_params
     end
