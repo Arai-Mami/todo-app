@@ -1,69 +1,9 @@
-<!-- DOCTYPE html -->
+<main class="main wrapper">
+  <%= render "tasks/aside"%>
+<div class="article">
+  <%= render "tasks/cards"%>
+</div>
+</main>
 
-<html lang="ja">
-  <head>
-    <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
-    <!-- googleフォントの指定 -->
-  </head>
-  <title>Todo-App</title>
-  <body>
-    <header class="header">
-      <div class="wrapper">
-        <%= link_to "Todo","#", class: "logo"%>
-        <ul class="menu">
-          <li class="menu-item"><a href="#" class="menu-item-link">Mami Arai</a>
-          </li>
-          <li class="menu-item"><a href="#" class="menu-item-link">Log out</a></li>
-        </ul>
-      </div>
-    </header>
-
-    <main class="main wrapper">
-      <div class="aside">
-        <ul class="type_list">
-          <li class="type_item"><a href="#" class="type_item_link">個人タスク</a></li>
-          <li class="type_item"><a href="#" class="type_item_link">チームタスク</a></li>
-          <li class="type_item"><a href="#" class="type_item_link">プライベートタスク</a></li>
-        </ul>
-      </div>
-      <div class="article">
-        メイン部分
-        <div class= "task_box">
-          <div class="task_card">
-            １
-          </div>
-          <div class="task_card">
-            ２
-          </div>
-          <div class="task_card">
-            ３
-          </div>
-          <div class="task_card">
-            ４
-          </div>
-          <div class="task_card">
-            ５
-          </div>
-          <div class="task_card">
-            ６
-          </div>
-          <div class="task_card">
-            ７
-          </div>
-          <div class="task_card">
-            ８
-          </div>
-        </div>
-        <div class="new_task_link"><%= link_to "New Task", tasks_new_path, {class: "new_task_link_item"}%></div>
-      </div>
-
-    </main>
-
-    <footer class="footer">
-      <p class="copylight">©arai</p>
-    </footer>
-  </body>
-</html>
 
 <!-- article=記事 -->

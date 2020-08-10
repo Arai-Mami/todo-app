@@ -7,9 +7,28 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
+    <!-- googleフォントの指定 -->
+    <title>Todo-App</title>
   </head>
+    <body>
+      <header class="header">
+        <div class="wrapper">
+          <%= link_to "Todo","#", class: "logo"%>
+          <ul class="menu">
+            <li class="menu-item"><a href="#" class="menu-item-link">Mami Arai</a>
+            </li>
+            <li class="menu-item"><a href="#" class="menu-item-link">Log out</a></li>
+          </ul>
+        </div>
+      </header>
 
   <body>
     <%= yield %>
   </body>
+  <footer class="footer">
+    <p class="copylight">©arai</p>
+  </footer>
+
 </html>
