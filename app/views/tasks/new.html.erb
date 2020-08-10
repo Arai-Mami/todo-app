@@ -1,0 +1,52 @@
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
+    <!-- googleフォントの指定 -->
+  </head>
+  <title>Todo-App</title>
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <%= link_to "Todo","#", class: "logo"%>
+        <ul class="menu">
+          <li class="menu-item"><a href="#" class="menu-item-link">Mami Arai</a>
+          </li>
+          <li class="menu-item"><a href="#" class="menu-item-link">Log out</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="main wrapper">
+      <div class="aside">
+        サイドバー
+      </div>
+      <div class="article">
+        <div class="task_form">
+        <%= form_tag(tasks_new_path, method: :post) do %>
+          <div class="form_contents">
+            <p class= "form_title">Create a new task.</p>
+            <div class="form_wrrap">
+              <div class="label"><%= label_tag :Title %></div>
+              <div class="title_firld"><%= text_field_tag :title %></div>
+            </div>
+            <div class="form_wrrap">
+              <div class="label"><%= label_tag :Details %></div>
+              <div class="details_firld"><%= text_area_tag :details %></div>
+            </div>
+            <div class="btn"><%= submit_tag "create" %></div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+
+    </main>
+
+
+    <footer class="footer">
+      <p class="copylight">©arai</p>
+    </footer>
+  </body>
+</html>
+
+<!-- article=記事 -->

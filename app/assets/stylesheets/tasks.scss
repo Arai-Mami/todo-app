@@ -14,16 +14,16 @@ body {
 } 
 /*header start*/
 .header{
+  height: 50px;
   width: 100%;
   background-color: #B4C1D1;
 }
 
 .wrapper{
-  max-width: 1200px;
+  max-width: 1400px;
   // 横幅最大1100px
   margin: 0 auto;
   //headerの中で中央に配置する指定
-  padding: 0.4%;
   //スマートフォン向け余白の指定
   display: flex;
   justify-content: space-between;
@@ -31,15 +31,15 @@ body {
 
 .logo{
   color: #fff;
-  font-size: 54px;
+  font-size: 30px;
   text-decoration: none;
-  line-height: 100px;
+  margin-top: 10px;
 }
 
 .menu {
   list-style: none;
   display: flex;
-  padding-top: 50px;
+  padding-top: 10px;
 }
 
 .menu-item{
@@ -55,12 +55,12 @@ body {
 
 .main{
   padding: 50px 0;
-  min-height: calc(100vh - 189px)
+  min-height: calc(100vh - 80px)
 }
 
 //main article start
 .article{
-  width: 74%;
+  width: 75%;
   background-color: #fff;
 }
 
@@ -79,16 +79,101 @@ body {
   box-shadow: 3px 3px 6px rgba(0,0,0,0.8);
 }
 
+.new_task_link{
+  margin: 20px 0 0 20px;
+}
+
+.new_task_link_item{
+  font-size: 30px;
+  color: #9e9e9e;
+}
+
+//new.html start
+.task_form{
+  height: 600px;
+  width: 850px;
+  border-radius: 40px;
+  box-shadow: 3px 3px 6px rgba(0,0,0,0.8);
+  position: relative;
+}
+
+.form_contents{
+  width: 850px;
+  position: absolute;
+  margin: 0 50px;
+}
+
+.form_title{
+  color: #9e9e9e;
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 225px;
+}
+
+.form_wrrap{
+  display: flex;
+  margin-top: 30px;
+
+}
+
+.label{
+  color: #9e9e9e;
+  font-size: 30px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.title_firld input{
+  width: 500px;
+  height: 40px;
+  margin-left: 35px;
+  border-radius: 15px;
+  border: 1px solid #707070;
+}
+
+.details_firld textarea{
+  width: 500px;
+  height: 300px;
+  border-radius: 15px;
+  border: 1px solid #707070;
+}
+
+.btn input{
+  width: 175px;
+  height: 45px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #9e9e9e;
+  background-color: #F7EFA2;
+  border-radius: 25px;
+  border: none;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+  margin-left: 275px;
+  margin-top: 20px;
+}
+
 //main aside start
 .aside{
-  width: 22%;
+  width: 20%;
   border-right: 3px solid #70707054;
 }
+
+.type_item{
+  margin-top: 25px;
+}
+
+.type_item_link{
+  color: #000000;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+
 
 //footer start
 
 .footer{
-  height: 45px;
+  height: 30px;
   width: 100%;
   background-color: #B4C1D1;
   align-items: center;
@@ -97,6 +182,5 @@ body {
 .copylight{
   color: #fff;
   text-align: center;
-  line-height: 45px;
 }
 

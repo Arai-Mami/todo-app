@@ -21,7 +21,11 @@
 
     <main class="main wrapper">
       <div class="aside">
-        サイドバー
+        <ul class="type_list">
+          <li class="type_item"><a href="#" class="type_item_link">個人タスク</a></li>
+          <li class="type_item"><a href="#" class="type_item_link">チームタスク</a></li>
+          <li class="type_item"><a href="#" class="type_item_link">プライベートタスク</a></li>
+        </ul>
       </div>
       <div class="article">
         メイン部分
@@ -51,6 +55,7 @@
             ８
           </div>
         </div>
+        <div class="new_task_link"><%= link_to "New Task", tasks_new_path, {class: "new_task_link_item"}%></div>
       </div>
 
     </main>
