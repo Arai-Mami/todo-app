@@ -1,5 +1,5 @@
 <div class="task_form">
-  <%= form_tag(tasks_new_path, method: :post) do %>
+  <%= form_tag( task_type_tasks_path(@select_type), method: :post) do %>
     <div class="form_contents">
       <p class= "form_title">Create a new task.</p>
       <div class="form_wrrap">
@@ -7,10 +7,10 @@
         <div class="title_firld"><%= text_field_tag :title %></div>
       </div>
       <div class="form_wrrap">
-        <div class="label"><%= label_tag :Details %></div>
-        <div class="details_firld"><%= text_area_tag :details %></div>
+        <div class="label"><%= label_tag :Detail %></div>
+        <div class="details_firld"><%= text_area_tag :detail %></div>
       </div>
-      <div class="btn"><%= submit_tag "create" %></div>
+      <div><%= submit_tag "create", :class=>"btn_wide"%></div>
       </div>
   <% end %>
 </div>

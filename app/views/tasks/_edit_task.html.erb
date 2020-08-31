@@ -1,0 +1,16 @@
+<div class="task_form">
+  <%= form_for(@task) do |f|%>
+    <div class="form_contents">
+      <p class= "form_title">Edit the task.</p>
+      <div class="form_wrrap">
+        <div class="label"><%= f.label :title ,"Title"%></div>
+        <div class="title_firld"><%= f.text_field :title%></div>
+      </div>
+      <div class="form_wrrap">
+        <div class="label"><%= f.label :detail ,"Detail"%></div>
+        <div class="details_firld"><%= f.text_area :detail%></div>
+      </div>
+     <%= f.submit "edit", :class => "btn_wide"%>
+      </div>
+  <% end %>
+</div>

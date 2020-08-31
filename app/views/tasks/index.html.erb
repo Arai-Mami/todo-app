@@ -1,7 +1,9 @@
 <main class="main wrapper">
-  <%= render "tasks/aside"%>
+  <%= render "tasks/aside" %>
 <div class="article">
-  <%= render "tasks/cards"%>
+  <% if @select_type %>
+  <%= render "tasks/cards" %>
+  <% end %>
 </div>
 </main>
 
