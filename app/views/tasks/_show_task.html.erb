@@ -1,6 +1,10 @@
+<div class="btn-wrapper">
+<div class="btn edit"><%= link_to "edit", "#{@task.id}/edit"%></div>
+<div class= "btn done"><%= link_to "done","#"%></div>
+</div>
 <p class="detail_item_label">Title</p>
-<div class="detail_title">受講生管理票作成</div>
+<div class="detail_title"><%= @task.title %></div>
 <p class="detail_item_label">Details</p>
-<%= simple_format "ああああああああああああ"%>
+<%= simple_format @task.detail %>
 <p class="detail_item_label">Progress</p>
 <%= simple_format "進んだ"%>

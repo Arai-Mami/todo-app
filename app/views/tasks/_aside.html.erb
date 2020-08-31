@@ -1,7 +1,13 @@
 <div class="aside">
   <ul class="type_list">
-    <li class="type_item"><a href="#" class="type_item_link">個人タスク</a></li>
-      <li class="type_item"><a href="#" class="type_item_link">チームタスク</a></li>
-      <li class="type_item"><a href="#" class="type_item_link">プライベートタスク</a></li>
+  <% @task_types.each do |task_type|%>
+    <li class="type_item"><a href="/task_types/<%= task_type.id %>/tasks" class="type_item_link"><%= task_type.type_name%></a></li>
+  <% end %>
   </ul>
+
+
+  <%= form_for(@task_type) do |f| %>
+    <%= f.text_field :type_name %>
+    <%= f.submit "create"%>
+  <% end %>
 </div>
