@@ -11,11 +11,12 @@ html{
 //ユーザーが設定した文字サイズを正しく反映させる
 body {
   font-family: "Yu Gothic Medium", "遊ゴジック Medium", YuGothic, "遊ゴシック体", "ヒラキノ角ゴ Pro W3", sans-serif;
+  height: 100vh;
 } 
 /*header start*/
 .header{
   height: 50px;
-  width: 100%;
+  width: 100vw;
   background-color: #B4C1D1;
 }
 
@@ -52,8 +53,12 @@ body {
 }
 
 //main start
+.main {
+  padding: 50px 0;
+  min-height: calc(100vh - 80px)
+}
 
-.main{
+.tasks_page{
   padding: 50px 0;
   min-height: calc(100vh - 80px)
 }
@@ -78,6 +83,7 @@ body {
   border-radius: 10px;
   box-shadow: 3px 3px 6px rgba(0,0,0,0.8);
   position: relative;
+  padding: 20px;
 }
 
 .task_card a {
@@ -140,6 +146,7 @@ body {
   margin-left: 25px;
   border-radius: 15px;
   border: 1px solid #707070;
+  padding: 0 10px 0 10px;
 }
 
 .details_firld textarea{
@@ -147,6 +154,7 @@ body {
   height: 300px;
   border-radius: 15px;
   border: 1px solid #707070;
+  padding: 10px;
 }
 
 .btn_wide{
@@ -210,6 +218,11 @@ body {
   font-size: 20px;
 }
 
+.progress_form{
+  width: 50%;
+  height: 100px;
+  padding: 5px;
+}
 
 
 //footer start

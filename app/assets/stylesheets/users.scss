@@ -1,0 +1,23 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.email_firld input{
+  width: 500px;
+    height: 40px;
+    margin-left: 25px;
+    border-radius: 15px;
+    border: 1px solid #707070;
+    padding: 0 10px 0 10px;
+
+}
+
+.user_form{
+  height: 300px;
+  width: 850px;
+  border-radius: 40px;
+  box-shadow: 3px 3px 6px rgba(0,0,0,0.8);
+  position: relative;
+  margin: 0 auto;
+}
+

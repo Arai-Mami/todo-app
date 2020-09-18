@@ -1,0 +1,16 @@
+<div class="user_form">
+  <%= form_for [current_user] do |f|%>
+    <div class="form_contents">
+      <p class= "form_title">Edit the User.</p>
+      <div class="form_wrrap">
+        <div class="label"><%= f.label :name ,"name"%></div>
+        <div class="title_firld"><%= f.text_field :name%></div>
+      </div>
+      <div class="form_wrrap">
+        <div class="label"><%= f.label :email ,"email"%></div>
+        <div class="email_firld"><%= f.email_field :email%></div>
+      </div>
+     <%= f.submit "edit", :class => "btn_wide"%>
+      </div>
+  <% end %>
+</div>
